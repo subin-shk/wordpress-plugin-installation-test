@@ -19,8 +19,26 @@ The tests automate the following steps:
 - **pytest** and **pytest-selenium** installed.
 - **Chrome** (or other browsers) installed for the tests.
 
+## Report Generation
+The test results are stored in a report.html file. You can open this file in any browser to view the test results and logs in an easy-to-read format. The report includes:
+
+- A summary of passed/failed tests.
+
+- Detailed information for each test step.
+
 ## Installation
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/wordpress-plugin-installation-test.git
+
+
+2. Setting Up Environment Variables
+
+To securely store sensitive information, such as the WordPress login credentials, I have created a `.env` file in the root of the project with the following content:
+
+```ini
+WP_USERNAME=your-username-here
+WP_PASSWORD=your-password-here
+
+
